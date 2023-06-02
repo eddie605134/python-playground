@@ -43,3 +43,9 @@ age = d.get('age')
 country = d.get('country')
 
 print(name, age, country)  # 輸出：eddie 18 USA
+
+# 字典
+dict1 = {'A': 1, 'B': 2}
+dict2 = {'C': 3, 'D': 4}
+merged_dict = {**dict1, **dict2}
+print(merged_dict)  # 輸出：{'A': 1, 'B': 2, 'C': 3, 'D': 4}

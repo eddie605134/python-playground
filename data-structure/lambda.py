@@ -46,3 +46,8 @@ cars = [
 ]
 
 print(sorted(cars, key=lambda car: car[1]))
+
+d = {'age': 18, 'name': 'eddie'}
+
+if (name := d.get('name')) is not None:
+    print(name)  # 輸出：eddie
