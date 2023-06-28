@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
   <input type="text" hidden="true" value="123">
+
+  <!-- The text field -->
+  <input type="text" value="Hello World" id="myInput">
+
+  <button class="btn" data-clipboard-text="hello!">copy我</button>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js'
+    integrity='sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw=='
+    crossorigin='anonymous'></script>
+  <script>
+    const clipboard = new ClipboardJS('.btn');
+  </script>
 </body>
+
 </html>
